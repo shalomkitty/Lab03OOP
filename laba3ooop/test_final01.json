@@ -1,0 +1,17 @@
+[
+  {
+    "ID": 2,
+    "Name": "Wrench",
+    "Description": "Not a heavy tool"
+  },
+  {
+    "ID": 3,
+    "Name": "Chair",
+    "Description": "Object you can sit on"
+  },
+  {
+    "ID": 4,
+    "Name": "Kettle",
+    "Description": "In that thing you boil water"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "ID": 1,
+    "Name": "Book",
+    "Description": "Something interesting"
+  },
+  {
+    "ID": 3,
+    "Name": "Chair",
+    "Description": "Object you can sit on"
+  },
+  {
+    "ID": 4,
+    "Name": "AR15",
+    "Description": "piu piu"
+  }
+]
