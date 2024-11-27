@@ -30,35 +30,25 @@
         {
             textBoxName = new TextBox();
             textBoxDescription = new TextBox();
-            textBoxID = new TextBox();
             buttonOK = new Button();
             buttonCancel = new Button();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             SuspendLayout();
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(151, 143);
+            textBoxName.Location = new Point(228, 143);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(125, 27);
             textBoxName.TabIndex = 0;
             // 
             // textBoxDescription
             // 
-            textBoxDescription.Location = new Point(324, 143);
+            textBoxDescription.Location = new Point(425, 143);
             textBoxDescription.Name = "textBoxDescription";
             textBoxDescription.Size = new Size(125, 27);
             textBoxDescription.TabIndex = 1;
-            // 
-            // textBoxID
-            // 
-            textBoxID.Location = new Point(507, 143);
-            textBoxID.Name = "textBoxID";
-            textBoxID.Size = new Size(125, 27);
-            textBoxID.TabIndex = 2;
-            textBoxID.TextChanged += textBoxID_TextChanged;
             // 
             // buttonOK
             // 
@@ -86,7 +76,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.MediumSlateBlue;
-            label1.Location = new Point(187, 93);
+            label1.Location = new Point(259, 93);
             label1.Name = "label1";
             label1.Size = new Size(49, 20);
             label1.TabIndex = 5;
@@ -96,21 +86,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.MediumSlateBlue;
-            label2.Location = new Point(341, 93);
+            label2.Location = new Point(446, 93);
             label2.Name = "label2";
             label2.Size = new Size(85, 20);
             label2.TabIndex = 6;
             label2.Text = "Description";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.MediumSlateBlue;
-            label3.Location = new Point(560, 93);
-            label3.Name = "label3";
-            label3.Size = new Size(24, 20);
-            label3.TabIndex = 7;
-            label3.Text = "ID";
             // 
             // EditForm
             // 
@@ -118,12 +98,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(800, 450);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonCancel);
             Controls.Add(buttonOK);
-            Controls.Add(textBoxID);
             Controls.Add(textBoxDescription);
             Controls.Add(textBoxName);
             Name = "EditForm";
@@ -136,11 +114,9 @@
 
         private TextBox textBoxName;
         private TextBox textBoxDescription;
-        private TextBox textBoxID;
         private Button buttonOK;
         private Button buttonCancel;
         private Label label1;
         private Label label2;
-        private Label label3;
     }
 }
