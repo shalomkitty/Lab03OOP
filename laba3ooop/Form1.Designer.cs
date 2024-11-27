@@ -51,7 +51,7 @@
             // 
             // buttonOpen
             // 
-            buttonOpen.BackColor = Color.MediumSlateBlue;
+            buttonOpen.BackColor = Color.GreenYellow;
             buttonOpen.Location = new Point(551, 112);
             buttonOpen.Name = "buttonOpen";
             buttonOpen.Size = new Size(193, 49);
@@ -73,7 +73,7 @@
             // 
             // buttonAdd
             // 
-            buttonAdd.BackColor = Color.MediumSlateBlue;
+            buttonAdd.BackColor = Color.GreenYellow;
             buttonAdd.Location = new Point(551, 167);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(193, 51);
@@ -95,7 +95,7 @@
             // 
             // buttonAbout
             // 
-            buttonAbout.BackColor = Color.MediumSlateBlue;
+            buttonAbout.BackColor = Color.GreenYellow;
             buttonAbout.Location = new Point(587, 23);
             buttonAbout.Name = "buttonAbout";
             buttonAbout.Size = new Size(132, 60);

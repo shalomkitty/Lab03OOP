@@ -98,16 +98,23 @@ namespace laba3ooop
                 MyData selectedData = dataGridView1.CurrentRow.DataBoundItem as MyData;
                 if (selectedData != null)
                 {
-                    dataList.Remove(selectedData);
-                    dataGridView1.DataSource = null;
-                    dataGridView1.DataSource = dataList;
+                    DialogResult result = MessageBox.Show("Are you sure?", "Confirmation",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        dataList.Remove(selectedData);
+                        dataGridView1.DataSource = null;
+                        dataGridView1.DataSource = dataList;
+                    }
                 }
             }
         }
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Чорномаз Артем Вадимович\n2 курс\nК-23", "Про програму");
+            MessageBox.Show("Чорномаз Артем Вадимович\n2 курс\nК-23", "About program");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -118,7 +125,7 @@ namespace laba3ooop
 
     public class MyData
     {
-        public int ID { get; set; }
+        //public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
     }

@@ -19,7 +19,7 @@ namespace laba3ooop
             InitializeComponent();
             if (data != null)
             {
-                textBoxID.Text = data.ID.ToString();
+                //textBoxID.Text = data.ID.ToString();
                 textBoxName.Text = data.Name;
                 textBoxDescription.Text = data.Description;
                 Data = data;
@@ -32,7 +32,7 @@ namespace laba3ooop
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            Data.ID = int.Parse(textBoxID.Text);
+            //Data.ID = int.Parse(textBoxID.Text);
             Data.Name = textBoxName.Text;
             Data.Description = textBoxDescription.Text;
             DialogResult = DialogResult.OK;
@@ -41,6 +41,11 @@ namespace laba3ooop
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
+        }
+
+        private void textBoxID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
